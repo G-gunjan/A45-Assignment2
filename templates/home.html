@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to MainFlow Solutions</h1>
+        <p>Your trusted partner for digital transformation.</p>
+        <a href="{% url 'about' %}" class=" btn btn-success btn-lg">Learn More</a>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>We build modern, responsive, and scalable websites.</p>
+        </div>
+        <div class="service-box">
+            <h3>AI & Machine Learning</h3>
+            <p>Enhance business operations with AI-powered solutions.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cloud Solutions</h3>
+            <p>Seamlessly migrate your business to the cloud.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
